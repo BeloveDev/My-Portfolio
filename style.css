@@ -1,0 +1,471 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(to right, #080D27, #0C1542);
+    overflow: hidden;
+}
+main nav{
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 1px  30px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 5;
+}
+main nav .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 30px;
+}
+main nav .logo h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+main nav ul{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+main nav ul li{
+    list-style: none;
+    margin: 15px;
+    padding: 1px 10px;
+}
+main nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+main nav ul li:hover{
+    background: aqua;
+    border-radius: 20px;
+    transition: 0.5s ease;   
+}
+main nav ul li a:hover{
+    color: black;
+}
+main nav .list-icon{
+    color: white;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+main .mobile-nav{
+    width: 100%;
+    height: 100vh;
+    background: #080D27;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+main .mobile-nav.show{
+    opacity: 1;
+    visibility: visible;
+}
+main .mobile-nav ol li{
+    list-style: none;
+    margin-top: 25px;
+    padding: 2px 20px;
+}
+main .mobile-nav ol li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+main .mobile-nav ol li a:hover{
+    color: black;
+}
+main .mobile-nav ol li:hover{
+   background: aqua;
+   border-radius: 20px;
+   transition: 0.5s ease;
+   
+}
+main .mobile-nav .cancel{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.scrolled{
+    background:linear-gradient(to right, #030820, #0b1027);
+    transition: 0.9s ease;
+    border-bottom: 3px solid #080D27;
+}
+main header{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(to right, #080D27, #0C1542);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+main header .container-txt{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+@keyframes slideleft{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+.slide-left{
+    animation: slideleft 3s ease;
+    animation-iteration-count: 1;
+}
+main header .container-txt h1{
+    font-size: 50px;
+}
+main header .container-txt p{
+    color: aqua;
+}
+main header .container-txt .header-icons{
+    margin-top: 60px;
+}
+main header .container-txt .header-icons i{
+    margin-right: 10px;
+    color: aqua;
+}
+main header .container-txt .header-icons .download{
+    margin-top: 20px;
+}
+main header .container-txt .header-icons .download a{
+    padding: 7px 20px;
+    background: aqua;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+main header .container-txt .header-icons .download a:hover{
+    background: gray;
+    color: aqua;
+    transition: 0.5s ease;
+}
+main header .container-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-img img{
+    width: 60%;
+    box-shadow: 0px 0px 2px 2px aqua;
+}
+main .about{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(to right, #080D27, #0C1542);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+    padding-top: 100px;
+}
+main .about .about-content{
+    width: 80%;
+    height: auto;
+    background:linear-gradient(#131e55, #0C1542) ;
+    padding: 60px;
+    color: white;
+    border-radius: 20px;
+    border-top: 1px solid aqua;
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+    transition: 0.9s ease;
+}
+main .about .about-content h1{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+main .about .about-content h1 span{
+    color: aqua;
+}
+main .services{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+main .services h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+main .services h3{
+    margin-bottom: 10px;
+}
+main .services h1 span{
+    color: aqua;
+}
+main .services .services-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+main .services .services-content .service-1{
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    text-align: left;
+    border-radius: 20px;
+    border-left: 4px solid aqua;
+    border-right: 4px solid aqua;
+    border-top: 4px solid aqua;
+    border-bottom: 4px solid aqua;
+    background:linear-gradient(to left, #131e55, #0C1542) ;
+}
+main .services .services-content .service-2{
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    text-align: right;
+    border-radius: 20px;
+    border-left: 4px solid aqua;
+    border-right: 4px solid aqua;
+    border-top: 4px solid aqua;
+    border-bottom: 4px solid aqua;
+    background:linear-gradient(to right, #131e55, #0C1542) ;
+}
+main .project-container{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+main .project-container h1{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+main .project-container h1 span{
+    color: aqua;
+}
+main .project-content{
+    display: flex;
+    width: 90%;
+    height: 45vh;
+    cursor: pointer;
+}
+main .project-content button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    background:linear-gradient(to right, #131e55, #0C1542) ;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+main .project-content button:hover{
+    color: aqua;
+}
+main .project-content .image{
+    width: 50%;
+    position: relative;
+    transition: transform 0.3s;
+    margin: 20px;
+}
+main .project-content .image:hover{
+    transform: scale(0.9);
+}
+.card1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.8s ease;
+    color: #030820;
+    border-radius: 20px;
+    padding: 2px 5px;
+}
+.card2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.8s ease;
+    color: #030820;
+    border-radius: 20px;
+    padding: 2px 5px;
+}
+.back{
+    background-color: aqua;
+    opacity: 0;
+    transition: 0.8s ease;
+}
+.back p{
+    margin-bottom: 20px;
+}
+.back2 p{
+    margin-bottom: 20px;
+}
+.back2{
+    background-color: aqua;
+    opacity: 0;
+    transition: 0.8s ease;
+}
+main .contact{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .contact button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: aqua;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+main .contact button:hover{
+    background: grey;
+    color: aqua;
+    transition: 0.9s ease;
+}
+main footer{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #080D27;
+    color: white;
+}
+main footer i{
+    background: aqua;
+    color: #030820;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+}
+main footer p{
+    margin-top: 10px;
+    font-size: small;
+}
+/* css stops here */
+
+/* mediaquery starts here */
+@media screen and (max-width:1024px){
+    main nav{
+        padding: 10px 20px;
+    }
+    main nav .logo{
+        padding-left: 15px;
+    }
+    main nav ul{
+        display: none;
+    }
+    main nav .list-icon{
+        display: block;
+    }
+    main nav .logo h1{
+        font-size: 25px;
+    }
+    main header{
+        display: flex;
+        flex-direction: column;
+    }
+    main header .container-txt{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    main header .container-txt .slide-left{
+        width: 100%;
+        animation: none;
+        text-align: center;
+    }
+    main header .container-txt .header-icons{
+        margin-top: 30px;
+    }
+    main header .container-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .services{
+        justify-content: center;
+    }
+    main .services .services-content{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+    main .services .services-content .service-1{
+        width: 80%;
+        text-align: center;
+    }
+    main .services .services-content .service-2{
+        width: 80%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    main .project-container .project-content{
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    main .project-content .image{
+        width: 90%;
+        height: 40vh;
+        margin: 20px;
+    }
+    main footer p{
+        font-size:x-small;
+    }
+}

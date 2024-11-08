@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Assets/aos.css">
+    <script src="./Assets/aos.js"></script>
+    <script defer src="script.js"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <main>
+        <nav class="nav">
+            <div class="logo">
+                <h1>BeloveDev</h1>
+            </div>
+            <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#about">About</a>
+                    </li>
+                    <li>
+                      <a href="#services">Services</a>
+                    </li>
+                    <li>
+                      <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Contact</a>
+                    </li> 
+            </ul>
+            <div class="bi-list list-icon"></div>
+        </nav>
+        <div class="mobile-nav">
+          <ol>
+            <li>
+                <a href="#about">Home</a>
+              </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li> 
+          </ol>
+          <div class="cancel"><i class="bi-x-lg"></i></div>        
+        </div>
+        <header id="top">
+          <div class="container-txt">
+           <div class="slide-left">
+            <h1>Welcome!</h1>
+            <h2>I'm BeloveDev</h2>
+            <p>A Web Developer</p>
+            <div class="header-icons">
+              <a href="https://github.com/BeloveDev"> <i class="bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/emma-belove-ba96a7302/"><i class="bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/belove.dev/"> <i class="bi-instagram"></i></a>
+              <a href="https://x.com/belove_dev"><i class="bi-twitter"></i></a>
+              <a href="https://www.tiktok.com/@belove.dev?lang=en"><i class="bi-tiktok"></i></a>
+              <div class="download">
+                <a download href="./Images/My Resume_compressed.pdf">Download CV</a>
+              </div>
+            </div>
+           </div>
+          </div>
+          <div class="container-img"><img src="./Images/emmabelove.jpg" alt="" loading="lazy"></div>
+        </header>
+        <section class="about" id="about">
+          <div class="about-content" data-aos="fade-in">
+            <div>
+              <h1>About <span>Me</span></h1>
+              <p>
+                I’m a Frontend Web Developer skilled in HTML, CSS, Bootstrap, and JavaScript. 
+                My journey began with a fascination for how websites come to life, and I’m dedicated
+                to creating engaging user experiences. <br><br>
+
+                With a solid foundation in HTML and CSS, I enjoy building responsive layouts using Bootstrap. 
+                My JavaScript skills enhance interactivity in my projects.
+
+                Currently, I'm diving into React to further develop modern web applications, 
+                with plans to expand into backend development for a full-stack perspective. <br><br>
+                
+                I believe in continuous learning and thrive on challenges that push me to grow. Outside of coding, 
+                I enjoy exploring design trends, reading, and watching football matches.
+                
+                Feel free to check out my portfolio and connect!
+            </div>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <h1>My <span>Services</span></h1>
+          <div class="services-content">
+            <div class="service-1" data-aos="slide-right" style="transition: 0.9s ease;">
+              <h3>Frontend Web Development</h3>
+              <p>
+                As a frontend web developer, I specialize in crafting visually appealing and user-friendly websites 
+                that elevate your online presence. I combine aesthetics with functionality to create engaging user 
+                experiences that keep visitors coming back. Currently diving into React to further develop modern 
+                web applications.
+              </p>
+            </div>
+            <div class="service-2"  data-aos="slide-left" style="transition: 0.9s ease;">
+              <h3>Responsive Web Design</h3>
+              <p>
+                I create responsive web designs that provide an optimal user experience 
+                across all devices. Using flexible layouts and fluid images, I ensure seamless adaptation to different
+                screen sizes. Media queries allow me to customize styles for mobile and desktop, 
+                delivering solutions that effectively meet your goals.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="project-container" id="projects">
+          <h1>My <span>Projects</span></h1>
+          <div class="project-content">
+            <div class="image" onclick="toggleContent(this)" data-aos="slide-right" style="transition: 0.9s ease;">
+              <img class="card1 front" src="./Images/3e03d2f8022bfb53178813213b44845f.jpg" alt="">
+              <div class="card1 back">
+                <p>
+                  Lugx Gaming: A responsive e-commerce template for gaming shops, featuring sleek design,
+                  product pages, and community engagement.
+                </p>
+                <a href="https://lugxgamingsite.netlify.app"><button>Visit Website</button></a>
+              </div>
+            </div>
+            <div class="image" onclick="toggleContent2(this)" data-aos="slide-left" style="transition: 0.9s ease;">
+              <img class="card2 front2" src="./Images/6374679559ffaacd9909a26a60926bd1.jpg" alt="">
+              <div class="card2 back2">
+                <p>
+                  An e-commerce platform showcasing stylish and modern boutique products with an
+                  intuitive shopping experience.
+                </p>
+                <a href="https://btique.netlify.app"><button>Visit Website</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <a href="https://wa.link/kp0y97"><button>Contact me on Whatsapp</button></a>
+        </div>
+        <footer>
+          <a href="#top"><i class="bi-arrow-up"></i></a>
+          <p>Copyright © 2024 by BeloveDev | All right Reserved.</p>
+        </footer>
+    </main>
+</body>
+<script>AOS.init()</script>
+</html>
